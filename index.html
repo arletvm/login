@@ -7,21 +7,40 @@
     <title>login</title>
 
     <style>
-        body {
+         body{
             background-image: url(img/city-4935633.jpg);
-            width: 100vh;
-            background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #login {
+            background-color: rgb(255, 255, 255, 0.5);
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+        }
+        #login img {
+            width: 90px;
+        }
+        label, input {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+        @media (max-width:600px){
+            #login {
+                width: 90%;
+            }
         }
     </style>
 </head>
 <body>
-    <div>
+    <div id="login">
+        <img src="img/usuario.png" alt="">
         <form action="login.php">
-            <img src="" alt="">
-            <label>Email: </label><input type="email" id="email" name="email">
-            <label>Contraseña: </label> <input type="password" id="contrase" name="contrase">
+            <p><label>Email: </label><input type="email" id="email" name="email"></p>
+            <p><label>Contraseña: </label> <input type="password" id="contrase" name="contrase"></p>
         </form>
     </div>
 </body>
